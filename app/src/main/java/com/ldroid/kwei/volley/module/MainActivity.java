@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
     }
 
 
-    public void reqWeather(View view) {
+    public void reqExpress(View view) {
         mPresenter.reqExpress("shentong","123123");
     }
 
@@ -62,4 +62,5 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
     public void onError(String msg) {
         mTvZone.setText("接口请求失败：" + msg);
     }
+
 }
